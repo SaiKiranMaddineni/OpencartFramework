@@ -61,5 +61,12 @@ public class TC001_AccountRegistrationTest extends BaseClass {
 	public void mFeature(){
 		System.out.println("feature");
 	}
-	
+
+	public void rFeature2(){
+      System.out.println("feature2");
+	}
+	public void rFeature3(){
+		System.out.println("feature3");
+	}
+
 }
