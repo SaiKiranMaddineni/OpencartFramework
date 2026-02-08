@@ -57,6 +57,9 @@ public class TC001_AccountRegistrationTest extends BaseClass {
 		logger.info("--**Finished Account Registration Test**--");
 
 	}
-	
+
+	public void mFeature(){
+		System.out.println("feature");
+	}
 	
 }
