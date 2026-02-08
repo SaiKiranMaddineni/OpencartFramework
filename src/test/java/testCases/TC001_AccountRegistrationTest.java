@@ -26,15 +26,14 @@ public class TC001_AccountRegistrationTest extends BaseClass {
 	public void verify_account_registration() {
 
 		logger.info("Starting Account Registration");
-		
-		
+		logger.info("start the Account Registration testcases");
 		try{
 			HomePage hp = new HomePage(driver);
 		
 		hp.clickMyAccount();
-		//logger.info("Clicked on MyAccount Link");
+		logger.info("Clicked on MyAccount Link");
 		hp.clickRegister();
-		//logger.info("Clicked on Register Link");
+		logger.info("Clicked on Register Link");
 		AccountRegistrationPage Ap = new AccountRegistrationPage(driver);
 
 		////logger.info("Providing Customer details");
