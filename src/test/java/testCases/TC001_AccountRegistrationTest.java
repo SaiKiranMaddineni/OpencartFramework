@@ -25,7 +25,7 @@ public class TC001_AccountRegistrationTest extends BaseClass {
 	@Test(groups={"Regression","Sanity","Master"})
 	public void verify_account_registration() {
 
-		//logger.info("Starting Account Registration");
+		logger.info("Starting Account Registration");
 		
 		
 		try{
