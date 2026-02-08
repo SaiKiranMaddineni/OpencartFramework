@@ -26,38 +26,30 @@ public class TC001_AccountRegistrationTest extends BaseClass {
 	public void verify_account_registration() {
 
 		logger.info("Starting Account Registration");
-		
-		
 		try{
 			HomePage hp = new HomePage(driver);
-		
 		hp.clickMyAccount();
-		//logger.info("Clicked on MyAccount Link");
+		logger.info("Clicked on MyAccount Link");
 		hp.clickRegister();
-		//logger.info("Clicked on Register Link");
+		logger.info("Clicked on Register Link");
 		AccountRegistrationPage Ap = new AccountRegistrationPage(driver);
-
-		////logger.info("Providing Customer details");
+		logger.info("Providing Customer details");
 		Ap.setFirstName(randomstring().toUpperCase());
-
 		Ap.setLastName(randomstring());
 		Ap.setEmail(randomstring()+"@gmail.com");
 		Ap.setTelephone(randomNumber());
         String password=randomAlphanumeric();
 		Ap.setPassword(password);
-
 		Ap.setConfirmPassword(password);
 		Ap.setPrivacyPolicy();
 		Ap.clickContinue();
-		
 		Thread.sleep(20000);
-		
-		//logger.info("validating expected message");
+		logger.info("validating expected message");
 		String confirmationmsg = Ap.getConfirmationMsg();
 		Assert.assertEquals(confirmationmsg, "Your Account Has Been Created!");
 		}catch(Exception e) {
-			//logger.error("Test Failed");
-			//logger.debug("debug logs");
+			logger.error("Test Failed");
+			logger.debug("debug logs");
 			
 		}
 		
