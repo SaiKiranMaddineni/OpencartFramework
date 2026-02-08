@@ -16,6 +16,7 @@ public class TC002_LoginDDT extends BaseClass {
 	public void VerifyLoginDDT(String email, String pwd, String exp) {
 
 		logger.info("Starting TC002_LoginTestDDT");
+		logger.info("--**Starting Login TestDDT**--");
 
 		try {
 			
@@ -23,7 +24,7 @@ public class TC002_LoginDDT extends BaseClass {
 
 			hp.clickMyAccount();
 			hp.clickLogin();
-			logger.info("Clicked on Login Link ddt");
+			//logger.info("Clicked on Login Link ddt");
 
 			LoginPage login = new LoginPage(driver);
 			login.enterEmail(email);
@@ -58,6 +59,9 @@ public class TC002_LoginDDT extends BaseClass {
 			e.printStackTrace();
 
 		}
+		logger.info("--**Finished Login TestDDT**--");
+		logger.info("--**Finished Login TestDDT**--");
+		logger.info("--**Finished Login TestDDT**--");
 		logger.info("--**Finished Login TestDDT**--");
 
 	}
