@@ -27,6 +27,7 @@ public class TC001_AccountRegistrationTest extends BaseClass {
 
 		logger.info("Starting Account Registration");
 		logger.info("--->Starting Account Registration<---");
+		logger.info("--->Starting Account Registration45678<---");
 		try{
 			HomePage hp = new HomePage(driver);
 		hp.clickMyAccount();
