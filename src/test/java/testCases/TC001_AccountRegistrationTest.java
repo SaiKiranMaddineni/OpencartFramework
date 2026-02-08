@@ -52,8 +52,7 @@ public class TC001_AccountRegistrationTest extends BaseClass {
 			logger.debug("debug logs");
 			
 		}
-		
-		//logger.info("--**Finished Account Registration Test**--");
+		logger.info("--**Finished Account Registration Test**--");
 
 	}
 	
